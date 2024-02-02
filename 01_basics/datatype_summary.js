@@ -44,3 +44,26 @@ console.log(typeof bigNumber);  // This is how you can check the types of data
     //    Arrays  =>  object
     //    Function  =>  function
     //    Object  =>  object
+
+// +++++++++++++++++++++++++++++++++Stack And Heap Memory++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive datatypes) Heap (Non primitive)
+// Stack memory provides a copy 
+// Heap memory provides the reference  
+let Name = "Dabeer"
+let anotherName = Name
+anotherName = "Ahmed"
+// console.log(Name);
+// console.log(anotherName)
+
+
+let userOne = {
+    email: "user@gmail.com",
+    ph: 123456789
+}
+
+let userTwo = userOne
+
+userTwo.email = "dabeer@gmail.com"
+// console.log(userOne)
+// console.log(userTwo)
