@@ -23,3 +23,10 @@ let newDate = new Date();
 // console.log(newDate);
 // console.log(newDate.getDay());
 // console.log(newDate.getMonth()+1);
+
+// `The date today is ${newDate.getDay()} and the time is ${}`      this is how you can return in your wordings by the help of string interpolation
+
+
+console.log(newDate.toLocaleString('default', {            //This is how you can customize your date accordingly
+    weekday: "long",
+}))
