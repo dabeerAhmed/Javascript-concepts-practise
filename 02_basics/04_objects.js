@@ -52,3 +52,30 @@ const user = [
 // console.log(Object.entries(tinderUser));
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'))
 // console.log(tinderUser.hasOwnProperty('isLoggedOut'))
+
+// ********************Object destructuring ***********************
+
+const course = {
+    coursename: "Javascript",
+    price: "999",
+    courseInstructor: "Hitesh"
+}
+
+const {courseInstructor: instructor} = course
+
+console.log(instructor)
+
+
+// ************************Json format***********************
+
+// {
+//     "name":"dabeer ahmed",
+//     "designation": "engineer",
+//     "job_type" : "full time"
+// }
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
