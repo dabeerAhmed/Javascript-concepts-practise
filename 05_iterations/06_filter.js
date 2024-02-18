@@ -11,7 +11,7 @@ const myNums = [1,2,3,4,5,6,7,8,9,10]
 const myNums2 = myNums.filter( (item)=>{
     return item > 4
 } )
-// console.log(myNums2)
+// console.log(myNums2) 
 
 const myNums3 = myNums.filter((num)=> num>5)
 // console.log(myNums3)
