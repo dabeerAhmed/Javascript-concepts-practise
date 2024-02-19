@@ -14,9 +14,9 @@ coding.forEach( (val) => {
 
 
 function printme(item){
-    // console.log(item)
+    console.log(item)
 }
-coding.forEach(printme)
+// coding.forEach(printme)
 
 
 coding.forEach( (item, index, arr)=>{

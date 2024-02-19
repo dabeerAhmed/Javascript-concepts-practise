@@ -33,3 +33,4 @@ JsUser.greetingsTwo = function(){
 }
 // console.log(JsUser.greetings())
 // console.log(JsUser.greetingsTwo())
+// console.log(JsUser)

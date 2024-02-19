@@ -12,7 +12,7 @@ const myTotal2 = myNums.reduce( (acc, curVal) => acc + curVal, 0)
 
 for(let i = 0; i<myNums.length; i++){
     const num = i + myNums[i]
-    console.log(num)    
+    // console.log(num)    
 }
 
 

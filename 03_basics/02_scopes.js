@@ -1,9 +1,11 @@
-// var c = 300
+var c = 300
 let a = 400
 if (true) {
     let a = 10
     const b = 20
     // console.log("Inner : ",a);
+    // var c= 17
+    // console.log(c)
 }
 // console.log("Outer : ", a);
 // console.log(b);
@@ -18,7 +20,7 @@ function one(){
 
     function two(){
         const website = "db-portfolio"
-        // console.log(username)
+        console.log(username)
     }
     // console.log(website)
     two()
