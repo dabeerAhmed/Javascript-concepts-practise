@@ -1,6 +1,6 @@
 const name = "Dabeer";
 const repoCount = 50;
-console.log(`Hello my name is ${name} and my repo count is ${repoCount}`)
+// console.log(`Hello my name is ${name} and my repo count is ${repoCount}`)
 
 const gameName = new  String('Dabeer-db');
 // console.log(gameName[0]);
@@ -16,8 +16,8 @@ const anotherString = gameName.slice(-8,5)
 // console.log(anotherString);
 
 const newStringOne = "        dabeer     "
-console.log(newStringOne);
-console.log(newStringOne.trim())
+// console.log(newStringOne);
+// console.log(newStringOne.trim())
 
 const url = "https://dabeer.com/dabeer%20ahmed"
 // console.log(url.replace('%20','-'));

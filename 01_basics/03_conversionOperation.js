@@ -42,7 +42,7 @@ let str3 = str1 + str2
 // console.log("1"+2);
 // console.log("1"+2+2); 
 // console.log(1+2+"3");
-// console.log((2+5)*(3%6)) // this should the way. parenthesis should be used if you need to write a code like this
+// console.log((2+5)*(3%6)) // this should be the way. parenthesis should be used if you need to write a code like this
 
 // console.log(+true);
 // console.log(+"")
