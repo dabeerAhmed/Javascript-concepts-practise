@@ -1,15 +1,18 @@
 var c = 300
 let a = 400
+const b = 100
 if (true) {
     let a = 10
     const b = 20
+    // console.log("inner b:", b)
+
     // console.log("Inner : ",a);
-    // var c= 17
-    // console.log(c)
+    var c= 17
+    // console.log("inner c: ",c)
 }
 // console.log("Outer : ", a);
-// console.log(b);
-// console.log(c);
+// console.log("outer b",b);
+// console.log("outer c:", c);
 
 
 // interview question : global scope is different in windows and node.
