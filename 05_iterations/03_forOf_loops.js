@@ -38,7 +38,7 @@ for(const [key, value] of map){
 
 
 
-const myObj = {
+const myObj = { 
     game1: "nfs",
     game2: "spiderman"
 }

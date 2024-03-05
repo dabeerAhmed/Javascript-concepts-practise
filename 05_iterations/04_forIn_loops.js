@@ -1,5 +1,5 @@
 const myObject={
-    js:'javascript',
+    js:'javascript', 
     cpp:'c++',
     rp:'ruby',
     swift:'swift by apple'

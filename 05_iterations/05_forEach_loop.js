@@ -37,7 +37,7 @@ const myCoding = [
         languageName: "python",
         languageFile: "py"
     },
-]
+] 
 
 myCoding.forEach( (item)=>{
     // console.log(item.languageFile)

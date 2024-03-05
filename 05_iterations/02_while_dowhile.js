@@ -20,4 +20,4 @@ let score = 1
 do{
     // console.log(`value is ${score}`)
     score++
-} while (score <= 10)
+} while (score <= 10) 

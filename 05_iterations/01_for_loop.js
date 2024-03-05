@@ -36,7 +36,7 @@ for(let i = 0; i<myArray.length; i++){
 
 
 // break and continue
-
+ 
 
 for (let index = 1; index <= 20; index++) {
     if(index == 5){

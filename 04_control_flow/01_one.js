@@ -1,7 +1,7 @@
 const isLoggedIn = true
 const temprature = 44
 
-// <, >, ==, ===, 1=, <=, >=, !=, !==
+// <, >, ==, ===, 1=, <=, >=, !=, !== 
 
 // if (temprature <= 50) {
 //     console.log("temprature is less than 50")
@@ -40,7 +40,7 @@ const loggedInFromEmail = false
 //     console.log("user logged in")   
 // }
 
-if (loggedInFromEmail || loggedInFromGoogle) {
-    console.log("user logged in")
+// if (loggedInFromEmail || loggedInFromGoogle) {
+//     console.log("user logged in")
     
-}
+// }
