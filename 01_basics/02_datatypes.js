@@ -1,4 +1,4 @@
-//alert(3+3)  //We are using node
+//alert(3+3)  //We are using nodejs , not browser
 // Code reusability should be high
 
 //datatypes
