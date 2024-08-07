@@ -33,17 +33,17 @@ let value = 3
 let negValue = -value
 // console.log(negValue)
 
-let str1 = "Hello"
-let str2 = " Dabeer"
+let str1 = "Dabeer"
+let str2 = " Ahmed"
 let str3 = str1 + str2
-// console.log(str3);
+// console.log(str3)
 
 // console.log(1+"2");
 // console.log("1"+2);
 // console.log("1"+2+2); 
 // console.log(1+2+"3");
 // console.log((2+5)*(3%6)) // this should be the way. parenthesis should be used if you need to write a code like this
-
+ 
 // console.log(+true);
 // console.log(+"")
 
