@@ -15,3 +15,10 @@ console.log(null >= 0);
 console.log(undefined == 0);
 console.log(undefined > 0);
 console.log(undefined < 0);
+console.log(undefined <= 0);
+console.log(undefined >= 0);
+//undefined always provide false when compared
+
+console.log("2" == 2); //it converts string to number and then compare it
+console.log("2" === 2); //it also check the datatype before comparing
+
