@@ -17,7 +17,7 @@ const anotherId = Symbol('123')
 // arrays, objects, functions
 
 const names = ["dabeer", "ali", "rafiq"]
-
+// console.log(typeof names)
 let myObject = {
     name : 'dabeer',
     age: 22
@@ -27,7 +27,7 @@ const myFunction = function(){
     console.log("Hello World")
 }
 
-console.log(typeof bigNumber);  // This is how you can check the types of data
+// console.log(typeof bigNumber);  // This is how you can check the types of data
 
 
 // Return type of variables in JavaScript
