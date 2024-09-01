@@ -8,10 +8,10 @@ const myDate = new Date();
 // console.log(myDate.toLocaleString());
 // console.log(typeof myDate);
 
-const myCreatedDate1 = new Date(21, 2, 2023)
-const myCreatedDate2 = new Date(21, 2, 2023, 5, 3)
+// const myCreatedDate1 = new Date(2023, 2, 23)
+// const myCreatedDate2 = new Date(2023, 2, 21, 5, 3)
 const myCreatedDate3 = new Date("2023-01-9")
-// console.log(myCreatedDate3.toLocaleString())
+console.log(myCreatedDate3.toLocaleString())
 
 
 const myTimestamp = Date.now()
