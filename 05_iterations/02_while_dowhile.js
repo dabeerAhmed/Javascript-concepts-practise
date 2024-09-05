@@ -9,7 +9,7 @@ while(index <= 10){
 let myArray = ["flash","superman","batman"]
 let myArr = 0
 while(myArr < myArray.length){
-    console.log(`Value is ${myArray[myArr]}`)
+    // console.log(`Value is ${myArray[myArr]}`)
     myArr = myArr + 1
 }
 
