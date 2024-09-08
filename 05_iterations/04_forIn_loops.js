@@ -3,7 +3,7 @@ const myObject={
     cpp:'c++',
     rp:'ruby',
     swift:'swift by apple'
-}
+} 
 
 for(const key in myObject){
     // console.log(`${key} is the shortcut of ${myObject[key]}`)
