@@ -1,49 +1,54 @@
-// for of
+// // for of
 
-//  ["","",""]
-//  [{},{},{}]
+// //  ["","",""]
+// //  [{},{},{}]
 
-const arr = [1,2,3,4,5]
-for (const i of arr) {
-    console.log(i);   
+
+let arr = [1,2,3,4,5]
+for(const number of arr){
+    // console.log(number)
 }
 
-const greetings = "hello world"
-for(const greet of greetings){
-    if(greet == " "){
+let grettings = 'Hello World!'
+for(const greet of grettings){
+    // console.log(greet)
+}
+for(const greet of grettings){
+    if (greet == " ") {
+        // console.log('space detected')
+        break
+    }
+    // console.log(greet)
+}
+for(const greet of grettings){
+    if (greet == " ") {
+        // console.log('space detected')
         continue
     }
-    // console.log(`each character is ${greet}`)
+    // console.log(greet)
 }
 
 
-// map
+// Map
 
 const map = new Map()
-map.set('Pk',"Pakistan")
-map.set('In','India')
-map.set('Fr',"France")
-map.set('Pk','Pakistan')
+map.set('Pk', "Pakistan")
+map.set('In', "India")
+map.set('Fr', "France")
 // console.log(map)
-
 
 for(const key of map){
     // console.log(key)
 }
 
-
 for(const [key, value] of map){
-    // console.log(key,':-', value)
+    // console.log(key, ":-", value)
 }
 
-
-
-const myObj = { 
-    game1: "nfs",
-    game2: "spiderman"
+const myObject = {
+    game1 : 'NFR',
+    game2 : 'Spiderman'
 }
-
-// for (const [key,value] of myObj){
-//     console.log(key,value)
-// }
-
+for(const [key,value] of myObject){
+    // console.log(key, ":-", value)  //it will provide an error
+}
