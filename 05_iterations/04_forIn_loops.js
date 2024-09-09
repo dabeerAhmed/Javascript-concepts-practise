@@ -5,22 +5,33 @@ const myObject={
     swift:'swift by apple'
 } 
 
-for(const key in myObject){
-    // console.log(`${key} is the shortcut of ${myObject[key]}`)
+for (const key in myObject){
+    // console.log(key)
 }
 
-const programming = [ "js", "ruby", "java", "cpp"]
-for (const key in programming){
-    // console.log(`${key} is for ${programming[key]}`)
+for (const key in myObject){
+    // console.log(myObject[key])
 }
 
+for (const key in myObject){
+    // console.log(`${key} is for ${myObject[key]}`)
+}
 
+const programming = ["js", "c++", "ruby", "java"]
+
+for(const key in programming){
+    // console.log(key)
+}
+
+for(const key in programming){
+    // console.log(programming[key])
+}
 
 const map = new Map()
-map.set('Pk',"Pakistan")
-map.set('In','India')
-map.set('Fr',"France")
 map.set('Pk','Pakistan')
+map.set('In','India')
+map.set('Fr','France')
+
 for(const key in map){
-    // console.log(key)
+    // console.log(key)  //maps is not iterable
 }
