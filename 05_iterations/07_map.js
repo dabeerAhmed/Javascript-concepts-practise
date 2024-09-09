@@ -1,14 +1,28 @@
-// map
+// // map
 
 
-const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const NewNums = myNums.map( (num) => num + 10)
-// console.log(NewNums);
+// const NewNums = myNums.map( (num) => num + 10)
+// // console.log(NewNums);
 
-const NewNums2 = myNums
-  .map((num) => num * 10)
-  .map((num) => num + 1)
-  .filter((num) => num >= 50);
-// console.log(NewNums2);
+// const NewNums2 = myNums
+//   .map((num) => num * 10)
+//   .map((num) => num + 1)
+//   .filter((num) => num >= 50);
+// // console.log(NewNums2);
 
+
+
+const myNums = [1,2,3,4,5,6,7,8,9,10]
+
+const value = myNums.map( (num) => {
+  return num + 10
+})
+// console.log(value)
+
+const chain = myNums
+.map( (num) => num * 10)
+.map( (num) => num + 1)
+.filter( (num) => num >= 40)
+console.log(chain)
