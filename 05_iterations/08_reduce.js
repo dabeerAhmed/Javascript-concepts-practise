@@ -39,5 +39,5 @@ const CartTotal = shoppingCart.reduce( (acc,curVal) => {
     return acc + curVal.price
     
 },0)
-// console.log(CartTotal)
- 
+console.log(CartTotal)
+  
