@@ -20,9 +20,10 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, quaerat?</p>
         <input type="password">
         <ul>
-            <li>one</li>
-            <li>Two</li>
-            <li>Three</li>
+            <li class="listitem">one</li>
+            <li class="listitem">Two</li>
+            <li class="listitem">Three</li>
+            <li class="listitem">four</li>
         </ul>
     </div>
     
@@ -31,6 +32,7 @@
 
 
 
+ <!-- DOM MANIPULATION EXAMPLES -->
 
 <!-- document.getElementById('title')
 <h1 id=​"title" class=​"heading">​Dom learning with chai or code​</h1>​
@@ -108,4 +110,118 @@ myli.innerText
 myli.innerText = 'five'
 'five'
 
+
+document.querySelectorAll('li')
+NodeList(3) [li, li, li]
+const tempLiList = document.querySelectorAll('li')
+undefined
+tempLiList
+NodeList(3) [li, li, li]
+tempLiList.style.color = 'green'
+VM240:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:24
+(anonymous) @ VM240:1Understand this error
+tempLiList[0].style.color = 'green'
+'green'
+tempLiList[1].style.color = 'red'
+'red'
+document.querySelectorAll('H1')
+NodeList [h1#title.heading]
+const heading = document.querySelectorAll('H1')
+undefined
+heading
+NodeList [h1#title.heading]
+heading.style.color = 'green'
+VM460:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:21
+(anonymous) @ VM460:1Understand this error
+heading[0].style.color = 'green'
+'green'
+
+tempLiList
+NodeList(3) [li, li, li]
+tempLiList.forEach((item) => {
+    item.style.color = "green"
+})
+
+
+document.getElementsByClassName('listitem')
+HTMLCollection(4) [li.listitem, li.listitem, li.listitem, li.listitem]0: li.listitem1: li.listitem2: li.listitem3: li.listitemlength: 4[[Prototype]]: HTMLCollection
+const TempClassList = document.getElementsByClassName('listitem')
+undefined
+TempClassList
+HTMLCollection(4) [li.listitem, li.listitem, li.listitem, li.listitem]
+TempClassList.forEach(function(li) {
+    console.log(li)
+})
+VM241:1 Uncaught TypeError: TempClassList.forEach is not a function
+    at <anonymous>:1:15
+(anonymous) @ VM241:1Understand this error
+document.getElementsByClassName('listitem')
+HTMLCollection(4) [li.listitem, li.listitem, li.listitem, li.listitem]
+TempClassList
+HTMLCollection(4) [li.listitem, li.listitem, li.listitem, li.listitem]
+Array.from(TempClassList)
+(4) [li.listitem, li.listitem, li.listitem, li.listitem]
+const myConvertedArray = Array.from(TempClassList)
+undefined
+myConvertedArray
+(4) [li.listitem, li.listitem, li.listitem, li.listitem]
+myConvertedArray.forEach(function(li){
+    console.log(li)
+})
+VM467:2 <li class=​"listitem">​…​</li>​
+VM467:2 <li class=​"listitem">​…​</li>​
+VM467:2 <li class=​"listitem">​…​</li>​
+VM467:2 <li class=​"listitem">​…​</li>​
+undefined
+myConvertedArray.forEach(function(li){
+    li.style.color = "orange"
+})
+undefined
+
+
+
+
+// WIKIPEDIA DOM MANIPULATION
+
+document.querySelectorAll('H2')
+NodeList(8) [h2.vector-pinnable-header-label, h2#Use, h2#Syntax, h2#Examples, h2#Differences_between_Java_and_Javascript, h2#Related_pages, h2#References, h2#Other_websites]0: h2.vector-pinnable-header-label1: h2#Use2: h2#Syntax3: h2#Examples4: h2#Differences_between_Java_and_Javascript5: h2#Related_pages6: h2#References7: h2#Other_websiteslength: 8[[Prototype]]: NodeList
+const myH2 = document.querySelectorAll('H2')
+undefined
+myH2
+NodeList(8) [h2.vector-pinnable-header-label, h2#Use, h2#Syntax, h2#Examples, h2#Differences_between_Java_and_Javascript, h2#Related_pages, h2#References, h2#Other_websites]
+myH2[0].innerText
+''
+myH2[1].innerText
+'Use'
+myH2[4].innerText
+'Differences between Java and Javascript'
+Array.from(myH2)
+(8) [h2.vector-pinnable-header-label, h2#Use, h2#Syntax, h2#Examples, h2#Differences_between_Java_and_Javascript, h2#Related_pages, h2#References, h2#Other_websites]0: h2.vector-pinnable-header-label1: h2#Use2: h2#Syntax3: h2#Examples4: h2#Differences_between_Java_and_Javascript5: h2#Related_pages6: h2#References7: h2#Other_websiteslength: 8[[Prototype]]: Array(0)
+const myH2Array = Array.from(myH2)
+undefined
+myH2Array.for
+undefined
+myH2Array.forEach(function(item){
+    item.style.color = "green"
+})
+undefined
+
+
+document.querySelectorAll(".mw-heading")
+NodeList(10) [div.mw-heading.mw-heading2, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2]
+const heading = document.querySelectorAll(".mw-heading")
+undefined
+heading
+NodeList(10) [div.mw-heading.mw-heading2, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2]
+heading[1].innerText
+'Frameworks[change | change source]'
+heading.forEach(function(item){
+    item.style.color = "red";
+    item.style.backgroundColor = "yellow";
+    item.style.padding = "10px";
+    item.innerText = "Dabeer"
+})
+undefined
  -->
