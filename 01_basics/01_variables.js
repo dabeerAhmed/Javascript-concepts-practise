@@ -10,10 +10,10 @@ accountEmail = "db@gmail.com"
 accountPassword = "212121"
 accountCity = "Lahore"
 
-console.log(accountId)
+console.log(accountId)   
 
 /*
-Prefer not to use var
+Prefer not to use var --
 because of issue in block scope and functional scope
 */
 
