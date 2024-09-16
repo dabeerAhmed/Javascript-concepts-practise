@@ -58,46 +58,56 @@
     </div>
   </body>
   <script>
-    // document.getElementById('owl').onclick= function(){
-    //     alert("owl clicked")
+    // document.getElementById('owl').onclick = function(){
+    //   alert('owl clicked')
     // }
 
-// attackEvent
-// jQuery - on
+    // attachEvent
+    // jQuery
 
-//type, timestamp, preventdefault
-    // target, toElement, srcElement
+    // type, timestamp, defaultprevented
+    // target, toElement, srcElement, currentTarget
     // clientX, clientY, screenX, screenY
-    // altkey, ctrlkey, shiftkey, keyCode
+    // altkey, ctrlkey, shiftkey, keycode
 
-    // document.getElementById('images').addEventListener('click', function(e){
-    //     console.log("clicked inside the ul")
-    // }, false)
+    // document.getElementById('owl').addEventListener('click', function(){
+    //   alert('owl clicked again')
+    // })
 
+
+
+
+
+    // document.getElementById('images').addEventListener('click', function(){
+    //   console.log('images inside ul clicked')
+    // },false)
+    
     // document.getElementById('owl').addEventListener('click', function(e){
-    //     console.log("owl clicked")
-    //     e.stopPropagation()
-    // }, false)
+    //   console.log('owl clicked')
+    //   e.stopPropagation()
+    // },false)
+    // // This will provide "owl clicked" first because of false(bubbling up nature). If we change it to true(capturing nature) then this will provide 'images inside ul clicked'. But if we use stopprogation then it will stop the propogation and the event do not go up after bubbling
+
 
     // document.getElementById('google').addEventListener('click', function(e){
-    //     e.preventDefault()
-    //     e.stopPropagation()
-    //     console.log("google clicked")
-    // },false)
-
-
-    // document.querySelector('#images').addEventListener('click', function(e){
-    //     console.log(e.target.tagName);
-    //     if(e.target.tagName === 'IMG'){
-    //         let removeIt = e.target.parentNode
-    //     removeIt.remove()
-    //       // removeIt.parentNode.removeChild(removeIt)
-    //     }
-        
-    // },false)
+    //   console.log("google clicked")
+    //   e.preventDefault();
+    //   e.stopPropagation();
+    // }, false)
 
 
 
+    document.querySelector('#images').addEventListener('click', function(e){
+      console.log(e.target.parentNode)
+      console.log(e.target.tagName)
+      if (e.target.tagName === 'IMG') {
+        const removeIt = e.target.parentNode
+        removeIt.remove()
+        // removeIt.parentNode.removeChild(removeIt)
+      }
+    })
+    
+    
   </script>
 </html>
  
