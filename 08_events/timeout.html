@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Practice</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    <h1>Dabeer Ahmed JavaScript Practice</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("Dabeer Ahmed")
+    // }, 2000)
+
+
+    // setTimeout(function(){
+    //     document.querySelector('h1').innerHTML = 'Learning Best Javascript Series'
+    // }, 2000)
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = 'Learning Best Javascript Series'
+    }
+    const changeMe = setTimeout(changeText, 2000)
+
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
+    
+</script>
+</html>
