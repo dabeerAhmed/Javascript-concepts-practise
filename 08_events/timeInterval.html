@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Practice</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    <h1>Dabeer Ahmed JavaScript Practice</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    // setInterval(function(){
+    //     console.log("Dabeer Ahmed", Date.now())
+    // },1000)
+
+
+
+    // const sayDate = function(str){
+    //     console.log(str, Date.now())
+    // }
+    
+    // const changeMe = setInterval(sayDate, 1000, 'hi db')
+    // clearInterval(changeMe)
+
+
+    
+
+
+
+    const sayDate2 = function(str){
+        console.log(str, Date.now())
+    }
+    let interval;
+
+    document.querySelector('#start').addEventListener('click', function(){
+        interval = setInterval(sayDate2, 1000, 'hi db')
+    })
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(interval)
+    })
+    
+</script>
+</html>
