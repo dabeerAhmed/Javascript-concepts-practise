@@ -7,7 +7,7 @@
 //     return color;
 
 // }
-// // console.log(randomColor())
+// // console.log(randomColor()) 
 
 // let intervalId;
 // const startChangingColor = function(){
