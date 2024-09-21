@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API REQUEST & V8 ENGINE</title>
+    <style>
+        .container{
+            padding: 16px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin: 20px;
+            width: 300px;
+            border-radius: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>XML HTTP REQUEST</h3>
+        <img style="width: 200px; border-radius: 100%;" src="" alt="Github avatar" />
+        <h4></h4>
+        <h5 class="followers"></h5>
+        <h5 class="following"></h5>
+        <p>The above data has been fetched from "api.github.com/users/dabeerAhmed" through ajax request(xml)</p>
+    </div>
+</body>
+<script>
+    const request = 'https://api.github.com/users/dabeerAhmed'
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', request)
+    // console.log(xhr.readyState)
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState)
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText)
+            console.log(typeof data) // it will give string because most of the response are string and we need to parse that first so i will write JSON.parse(this.responseText) in the above line and one i parsed it it will now show the type as object and now we can perform our operations on objects
+            console.log(data)
+            console.log(data.followers) 
+            console.log(data.following) 
+            document.querySelector('img').setAttribute("src", `${data.avatar_url}`)
+            document.querySelector('h4').innerHTML = `Github profile Name : ${data.name}`
+            document.querySelector('.followers').innerHTML = `Github followers = ${data.followers}`
+            document.querySelector('.following').innerHTML = `Github following = ${data.following}`
+
+        }
+    }
+    xhr.send()
+</script>
+</html>
