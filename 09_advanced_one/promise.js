@@ -12,8 +12,8 @@ promiseOne.then(function(){
 new Promise((resolve, reject) => {
     setTimeout(() => {
         console.log("Async task two completed")
+        resolve()
     },2000)
-    resolve()
-}).then(function(){
+}).then(() => {
     console.log("Async two resolved")
 })
