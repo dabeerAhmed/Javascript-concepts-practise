@@ -34,7 +34,7 @@ function myUser(username, loginCount, isLoggedIn){
 
 const userOne = new myUser('dabeer', 10, true)
 const userTwo = new myUser('ahmed', 15, false)
-console.log(userOne.constructor)  
+console.log(userOne.constructor)  //constructor property is basically refernce of itself
 console.log(userTwo)
 
 // "New" is an constructor function, whenever we user new keywork it will create an empty object. In the above code snippet we have used "new" keyword because if we donot use it then it will override the values of userOne with userTwo. So it is important to explicitly write new keyword.
