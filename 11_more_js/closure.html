@@ -6,6 +6,49 @@
     <title>Closure in Javascript</title>
 </head>
 <body>
+<script>
+
+// =======================================================================================================
+// LEXICAL SCOPING
+// =======================================================================================================
+/*
+In the below code snippet init() creates a local variable called name and a function called displayName().
+The displayName() function is an inner function that is defined inside init() and is available 
+only within the body of the init() function. Note that the displayName() function has no local 
+variables of its own. However, since inner functions have access to the variables of outer scopes, 
+displayName() can access the variable name declared in the parent function, init(). This is basically
+called Lexical Scoping.
+*/
+
+function init() {
+  let name = "Mozilla";
+  function displayName() {
+    console.log(name);
+  }
+  displayName();
+}
+init();
+
+
+function outer(){
+    let name = "Dabeer Ahmed"
+    // console.log(email) //Error => Email not defined because it does not have access of it
+
+    function inner(){
+        let email = "db@db.com"
+        console.log("Inner: ",name)
+    }
+    function innerTwo(){
+        console.log("Inner Two: ", name)
+        // console.log(email) //Error => Email not defined because it does not have access of it
+    }
+    inner()
+    innerTwo()
+}
+outer()
+// console.log("Outer" ,name) //Error => No access
+
+</script>
     
 </body>
 </html>
